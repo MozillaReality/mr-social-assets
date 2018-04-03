@@ -1,0 +1,19 @@
+{
+  "name": "mr-social-assets",
+  "version": "1.0.0",
+  "repository": "https://github.com/MozillaReality/mr-social-assets.git",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "build": "gltf-bundle -o ./dist",
+    "deploy": "node ./deploy.js ./dist"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.219.1",
+    "commander": "^2.15.1",
+    "dotenv": "^5.0.1",
+    "glob": "^7.1.2",
+    "glob-promise": "^3.4.0",
+    "gltf-bundle": "^0.2.0"
+  }
+}

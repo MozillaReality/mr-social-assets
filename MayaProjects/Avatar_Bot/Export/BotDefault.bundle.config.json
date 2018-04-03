@@ -1,0 +1,13 @@
+{
+  "name": "BotDefault",
+  "output": {
+    "filePath": "bots"
+  },
+  "assets": [
+    {
+      "name": "BotDefault",
+      "src": "./BotDefault_Avatar.fbx",
+      "components": ["./components.json"]
+    }
+  ]
+}

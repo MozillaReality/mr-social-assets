@@ -1,0 +1,13 @@
+{
+  "name": "BotPinky",
+  "output": {
+    "filePath": "bots"
+  },
+  "assets": [
+    {
+      "name": "BotPinky",
+      "src": "./BotPinky_Avatar.fbx",
+      "components": ["./components.json"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "BotJim",
+  "output": {
+    "filePath": "bots"
+  },
+  "assets": [
+    {
+      "name": "BotJim",
+      "src": "./BotJim_Avatar.fbx",
+      "components": ["./components.json"]
+    }
+  ]
+}
