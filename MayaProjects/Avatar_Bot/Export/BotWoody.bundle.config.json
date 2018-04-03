@@ -1,5 +1,6 @@
 {
   "name": "BotWoody",
+  "version": "0.0.1",
   "output": {
     "filePath": "bots"
   },
