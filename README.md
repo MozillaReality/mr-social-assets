@@ -47,18 +47,16 @@ The `asset.src` property can be a `.fbx`, `.gltf`, or `.glb` file. This asset fi
 
     ```json
     {
-      {
-        "scenes": {
-          "Root Scene": {
-            "loop-animation": {
-              "clip": "idle_eyes"
-            }
+      "scenes": {
+        "Root Scene": {
+          "loop-animation": {
+            "clip": "idle_eyes"
           }
-        },
-        "nodes": {
-          "Head": {
-            "scale-audio-feedback": ""
-          }
+        }
+      },
+      "nodes": {
+        "Head": {
+          "scale-audio-feedback": ""
         }
       }
     }
