@@ -1,0 +1,43 @@
+{
+  "name": "AtriumMeshes",
+  "version": "0.0.1",
+  "output": {
+    "filePath": "rooms/atrium"
+  },
+  "assets": [
+    {
+      "name": "AtriumMeshes",
+      "src": "./AtriumMeshes.fbx",
+      "components": [
+        {
+          "nodes": {
+            "NavMesh": {
+              "visible": false
+            },
+            "Skybox_node": {
+              "skybox": {
+                "azimuth": 0.280,
+                "inclination": 0.440
+              },
+              "light": {
+                "type": "ambient",
+                "color": "#FFF"
+              }
+            },
+            "DirectionalLight_node": {
+              "light": {
+                "type": "directional",
+                "color": "#F9FFCE",
+                "intensity": 0.6
+              },
+              "hide-when-quality": "low"
+            }
+          }
+        }
+      ],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
+    }
+  ]
+}

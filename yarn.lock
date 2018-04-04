@@ -25,8 +25,8 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
 "@types/node@*":
-  version "9.4.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.2.tgz#e49ac1adb458835e95ca6487bc20f916b37aff23"
 
 ajv@^6.4.0:
   version "6.4.0"
@@ -38,8 +38,8 @@ ajv@^6.4.0:
     uri-js "^3.0.2"
 
 aws-sdk@^2.219.1:
-  version "2.219.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.219.1.tgz#d2d9705726ffd32661632e781e90bfaafd3c1693"
+  version "2.221.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.221.1.tgz#437b6a4a0c9ce74fdd10c16d97b5247ff9c2cd35"
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -75,11 +75,7 @@ buffer@4.9.1:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-commander@^2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.0.tgz#ad2a23a1c3b036e392469b8012cec6b33b4c1322"
-
-commander@^2.15.1:
+commander@^2.15.0, commander@^2.15.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
@@ -132,9 +128,9 @@ glob@^7.0.5, glob@^7.1.2:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-gltf-bundle@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/gltf-bundle/-/gltf-bundle-0.4.1.tgz#1948c8aa9eb3cee9d4023f8857cc6fbd04a3d437"
+gltf-bundle@^0.4.4:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/gltf-bundle/-/gltf-bundle-0.4.5.tgz#e1bb42e28a40e915d31d51bfddae32b0007493cc"
   dependencies:
     "@robertlong/fbx2gltf" "^0.10.3"
     ajv "^6.4.0"
