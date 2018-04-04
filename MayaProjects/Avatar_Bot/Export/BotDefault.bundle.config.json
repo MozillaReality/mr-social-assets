@@ -8,7 +8,12 @@
     {
       "name": "BotDefault",
       "src": "./BotDefault_Avatar.fbx",
-      "components": ["./components.json"]
+      "components": [
+        "./components.json"
+      ],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
     }
   ]
 }
