@@ -14,10 +14,6 @@
     "dotenv": "^5.0.1",
     "glob": "^7.1.2",
     "glob-promise": "^3.4.0",
-<<<<<<< HEAD
     "gltf-bundle": "^0.4.4"
-=======
-    "gltf-bundle": "^0.4.3"
->>>>>>> d5a90a6499edad6b09a04ff769b5127909654d61
   }
 }
