@@ -52,7 +52,7 @@ function createUploadTask(s3Client, rootDir, filePath, bucket) {
     CacheControl: getCacheControl(filePath),
     ContentEncoding: shouldGzip(extension) ? "gzip" : undefined,
     ContentType: getContentType(filePath, extension),
-    Key: path.posix.normalize(path.relative(rootDir, filePath))
+    Key: path.relative(rootDir, filePath).replace(/\\/g, "/")
   });
 
   return req;
