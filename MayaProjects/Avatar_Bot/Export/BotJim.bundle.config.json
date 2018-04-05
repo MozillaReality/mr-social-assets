@@ -8,7 +8,10 @@
     {
       "name": "BotJim",
       "src": "./BotJim_Avatar.fbx",
-      "components": ["./components.json"]
+      "components": ["./components.json"],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
     }
   ]
 }

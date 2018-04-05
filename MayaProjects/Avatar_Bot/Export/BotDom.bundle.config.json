@@ -8,7 +8,10 @@
     {
       "name": "BotDom",
       "src": "./BotDom_Avatar.fbx",
-      "components": ["./components.json"]
+      "components": ["./components.json"],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
     }
   ]
 }
