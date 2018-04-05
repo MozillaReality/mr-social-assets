@@ -1,6 +1,6 @@
 {
   "name": "BotDefault",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "output": {
     "filePath": "bots"
   },
@@ -8,9 +8,7 @@
     {
       "name": "BotDefault",
       "src": "./BotDefault_Avatar.fbx",
-      "components": [
-        "./components.json"
-      ],
+      "components": ["./components.json"],
       "gltf-unlit-generator": {
         "lighten": 0.2
       }
