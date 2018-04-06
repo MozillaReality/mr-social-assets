@@ -1,0 +1,69 @@
+{
+  "name": "MeetingRoom",
+  "version": "0.0.1",
+  "output": {
+    "filePath": "rooms/meetingroom"
+  },
+  "assets": [
+    {
+      "name": "MeetingSpaceMeshes",
+      "src": "./MeetingSpaceMeshes.fbx",
+      "components": [
+        {
+          "nodes": {
+            "Water": {
+              "water": {
+                "forceMobile": true,
+                "normalMap": "waternormals.jpg"
+              },
+              "xr": {
+                "ar": false
+              }
+            },
+            "FloorNav_mesh": {
+              "visible": false
+            },
+            "CliffVista_mesh": {
+              "xr": {
+                "ar": false
+              },
+              "layers": {
+                "reflection": true
+              }
+            },
+            "Skybox_node": {
+              "skybox": {
+                "azimuth": 0.28,
+                "inclination": 0.44
+              },
+              "light": {
+                "type": "ambient",
+                "color": "#FFF"
+              },
+              "layers": {
+                "reflection": true
+              },
+              "xr": {
+                "ar": false
+              }
+            },
+            "DirectionalLight_node": {
+              "light": {
+                "type": "directional",
+                "color": "#F9FFCE",
+                "intensity": 0.6
+              },
+              "hide-when-quality": "low"
+            }
+          }
+        }
+      ],
+      "FBX2glTF": {
+        "args": ["--khr-materials-unlit"]
+      },
+      "gltf-unlit-generator": {
+        "skip": true
+      }
+    }
+  ]
+}
