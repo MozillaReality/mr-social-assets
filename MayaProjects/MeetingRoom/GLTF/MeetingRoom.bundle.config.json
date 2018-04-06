@@ -1,0 +1,91 @@
+{
+  "name": "MeetingRoom",
+  "version": "0.0.1",
+  "output": {
+    "filePath": "rooms/meetingroom"
+  },
+  "assets": [
+    {
+      "name": "CliffVista_mesh",
+      "src": "./CliffVista_mesh.gltf",
+      "gltf-unlit-generator": {
+        "skip": true
+      },
+      "components": [
+        {
+          "nodes": {
+            "CliffVista_mesh": {
+              "xr": {
+                "ar": false
+              },
+              "layers": {
+                "reflection": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "FloorNav_mesh",
+      "type": "resource",
+      "src": "./FloorNav_mesh.gltf",
+      "gltf-unlit-generator": {
+        "skip": true
+      },
+      "components": [
+        {
+          "nodes": {
+            "FloorNav_mesh": {
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MeetingSpace1_mesh",
+      "src": "./MeetingSpace1_mesh.gltf",
+      "gltf-unlit-generator": {
+        "skip": true
+      },
+      "components": [
+        {
+          "nodes": {
+            "Water": {
+              "water": {
+                "forceMobile": true
+              },
+              "xr": {
+                "ar": false
+              }
+            },
+            "Skybox_node": {
+              "skybox": {
+                "azimuth": 0.28,
+                "inclination": 0.44
+              },
+              "light": {
+                "type": "ambient",
+                "color": "#FFF"
+              },
+              "layers": {
+                "reflection": true
+              },
+              "xr": {
+                "ar": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "OutdoorFacade_mesh",
+      "src": "./OutdoorFacade_mesh.gltf",
+      "gltf-unlit-generator": {
+        "skip": true
+      }
+    }
+  ]
+}
