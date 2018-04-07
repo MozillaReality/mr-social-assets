@@ -120,3 +120,14 @@ In your terminal `cd` into the `mr-social-assets` directory and run:
 ```
 npm run deploy
 ```
+
+## Setting CORS Settings for your S3 Bucket
+
+Default CORS settings are stored in [cors-config.json](./cors-config.json).
+
+Using the [AWS CLI](https://aws.amazon.com/cli/):
+
+```
+cd mr-social-assets
+aws s3api put-bucket-cors --bucket <your bucket name> --cors-configuration file://cors-config.json
+```
