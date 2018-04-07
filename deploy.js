@@ -1,5 +1,6 @@
 require("dotenv").config();
 const program = require("commander");
+const promptly = require("promptly");
 const AWS = require("aws-sdk");
 const glob = require("glob-promise");
 const fs = require("fs");
@@ -11,13 +12,6 @@ program
   .version(version)
   .arguments("<src>")
   .parse(process.argv);
-
-const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_ACCESS_KEY,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
-});
-
-const bucket = process.env.S3_BUCKET;
 
 async function uploadFiles(s3Client, srcDir, bucket) {
   const files = await glob(path.join(srcDir, "**", "*"), {
@@ -100,12 +94,21 @@ function getCacheControl(filePath) {
   return "public, max-age=31536000";
 }
 
-const normalizedPath = path.normalize(program.args[0]);
+(async function execute() {
+  const normalizedPath = path.normalize(program.args[0]);
+  const bucket = process.env.S3_BUCKET;
 
-uploadFiles(s3, normalizedPath, bucket)
-  .then(() => {
+  if (
+    await promptly.confirm(
+      `Are you sure you wish to deploy to ${bucket}? (y/n)`
+    )
+  ) {
+    const s3 = new AWS.S3({
+      accessKeyId: process.env.AWS_ACCESS_KEY,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+    });
+
+    await uploadFiles(s3, normalizedPath, bucket);
     console.log("Done!");
-  })
-  .catch(e => {
-    console.error(e);
-  });
+  }
+})().catch(e => console.error(e));

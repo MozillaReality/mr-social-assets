@@ -98,7 +98,7 @@ The `asset.src` property can be a `.fbx`, `.gltf`, or `.glb` file. This asset fi
 In your terminal `cd` into the `mr-social-assets` directory and run:
 
 ```
-npm build
+npm run build
 ```
 
 Alternatively on Windows you can double-click the `build.bat` script.
@@ -118,5 +118,5 @@ S3_BUCKET=mybucket
 In your terminal `cd` into the `mr-social-assets` directory and run:
 
 ```
-npm deploy
+npm run deploy
 ```
