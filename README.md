@@ -131,3 +131,9 @@ Using the [AWS CLI](https://aws.amazon.com/cli/):
 cd mr-social-assets
 aws s3api put-bucket-cors --bucket <your bucket name> --cors-configuration file://cors-config.json
 ```
+
+# License
+
+All assets are licensed with the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Code is licensed with the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/).
