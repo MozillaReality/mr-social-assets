@@ -11,8 +11,9 @@
       "components": [
         {
           "nodes": {
-            "FloorNav_mesh": {
-              "visible": false
+            "NavMesh": {
+              "visible": false,
+              "nav-mesh": ""
             },
             "Skybox_node": {
               "skybox": {

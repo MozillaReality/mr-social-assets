@@ -12,7 +12,8 @@
         {
           "nodes": {
             "NavMesh": {
-              "visible": false
+              "visible": false,
+              "nav-mesh": ""
             },
             "TheaterSpace_Mesh": {
               "light": {
