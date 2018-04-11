@@ -28,16 +28,16 @@
     },
     {
       "name": "FloorNav_mesh",
-      "type": "resource",
-      "src": "./FloorNav_mesh.gltf",
+      "src": "./FloorNav_mesh.glb",
       "gltf-unlit-generator": {
         "skip": true
       },
       "components": [
         {
           "nodes": {
-            "FloorNav_mesh": {
-              "visible": false
+            "Navmesh": {
+              "visible": false,
+              "nav-mesh": ""
             }
           }
         }
