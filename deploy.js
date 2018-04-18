@@ -37,10 +37,6 @@ async function uploadFiles(s3Client, srcDir, bucket) {
       })
   );
 
-  for (const task of uploadTasks) {
-    task.send();
-  }
-
   await Promise.all(uploadPromises);
 }
 
