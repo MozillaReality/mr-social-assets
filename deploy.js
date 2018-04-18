@@ -25,7 +25,17 @@ async function uploadFiles(s3Client, srcDir, bucket) {
     createUploadTask(s3Client, absoluteSrcDir, filePath, bucket)
   );
 
-  const uploadPromises = uploadTasks.map(req => req.promise());
+  const uploadPromises = uploadTasks.map((req, idx) =>
+    req
+      .promise()
+      .then(() => {
+        console.log(`Successfully uploaded: ${files[idx]}`);
+      })
+      .catch(err => {
+        console.error(`Error uploading: ${files[idx]}`);
+        throw err;
+      })
+  );
 
   for (const task of uploadTasks) {
     task.send();
@@ -110,5 +120,9 @@ function getCacheControl(filePath) {
 
     await uploadFiles(s3, normalizedPath, bucket);
     console.log("Done!");
+    process.exit(0);
   }
-})().catch(e => console.error(e));
+})().catch(e => {
+  console.error(e);
+  process.exit(1);
+});
