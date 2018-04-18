@@ -50,6 +50,7 @@
         "skip": true
       },
       "components": [
+        "./MeetingSpace1_collision.json",
         {
           "nodes": {
             "Water": {
