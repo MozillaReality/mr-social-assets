@@ -1,6 +1,11 @@
 {
   "name": "Atrium",
   "version": "0.0.1",
+  "meta": {
+    "authors": [
+      "Mozilla"
+    ]
+  },
   "output": {
     "filePath": "rooms/atrium"
   },
