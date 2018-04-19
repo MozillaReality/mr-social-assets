@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "meta": {
     "authors": [
-      "Mozilla"
+      {
+        "name": "Mozilla"
+      }
     ]
   },
   "output": {

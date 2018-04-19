@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "meta": {
     "authors": [
-      "Mozilla"
+      {
+        "name": "Mozilla"
+      }
     ]
   },
   "output": {
@@ -22,8 +24,8 @@
             },
             "Skybox_node": {
               "skybox": {
-                "azimuth": 0.280,
-                "inclination": 0.440
+                "azimuth": 0.28,
+                "inclination": 0.44
               },
               "light": {
                 "type": "ambient",
