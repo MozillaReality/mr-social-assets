@@ -1,0 +1,57 @@
+{
+  "name": "MedievalFantasyBook",
+  "version": "0.0.1",
+  "meta": {
+    "title": "Medieval Fantasy Book",
+    "authors": [
+      {
+        "name": "Pixel",
+        "url": "https://sketchfab.com/models/06d5a80a04fc4c5ab552759e9a97d91a"
+      }
+    ]
+  },
+  "output": {
+    "filePath": "rooms/MedievalFantasyBook"
+  },
+  "assets": [
+    {
+      "name": "MedievalFantasyBook",
+      "src": "./scene.gltf",
+      "components": [
+        {
+          "scenes": {
+            "OSG_Scene": {
+              "loop-animation": {
+                "clip": "Take 001"
+              }
+            }
+          },
+          "nodes": {
+            "RootNode": {
+              "loop-animation": {
+                "clip": "Take 001"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NavMesh",
+      "src": "./navmesh.gltf",
+      "gltf-unlit-generator": {
+        "skip": true
+      },
+      "components": [
+        {
+          "nodes": {
+            "Navmesh": {
+              "visible": false,
+              "nav-mesh": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
