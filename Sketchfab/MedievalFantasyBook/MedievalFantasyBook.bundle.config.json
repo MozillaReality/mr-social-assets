@@ -16,11 +16,19 @@
   "assets": [
     {
       "name": "MedievalFantasyBook",
-      "src": "./scene.gltf",
+      "src": "./Export/MedievalFantasyBook.fbx",
+      "FBX2glTF": {
+        "args": [
+          "--khr-materials-unlit"
+        ]
+      },
+      "gltf-unlit-generator": {
+        "skip": true
+      },
       "components": [
         {
           "scenes": {
-            "OSG_Scene": {
+            "Root Scene": {
               "loop-animation": {
                 "clip": "Take 001"
               }
@@ -30,24 +38,11 @@
             "RootNode": {
               "loop-animation": {
                 "clip": "Take 001"
+              },
+              "NavMesh": {
+                "visible": false,
+                "nav-mesh": ""
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "NavMesh",
-      "src": "./navmesh.gltf",
-      "gltf-unlit-generator": {
-        "skip": true
-      },
-      "components": [
-        {
-          "nodes": {
-            "Navmesh": {
-              "visible": false,
-              "nav-mesh": ""
             }
           }
         }
