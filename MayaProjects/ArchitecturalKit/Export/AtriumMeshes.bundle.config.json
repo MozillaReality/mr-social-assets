@@ -24,19 +24,39 @@
             },
             "Skybox_node": {
               "skybox": {
-                "azimuth": 0.28,
-                "inclination": 0.44
+                "scale": "8000 8000 8000",
+                "turbidity": 20,
+                "rayleigh": 0.03,
+                "luminance": 1.185,
+                "azimuth": 0.37,
+                "inclination": 0.14,
+                "mieCoefficient": 0.004,
+                "mieDirectionalG": 0.098
               },
               "light": {
-                "type": "ambient",
-                "color": "#FFF"
+                "type": "hemisphere",
+                "color": "#1b2330",
+                "groundColor": "#16140f",
+                "intensity": 1.15
               }
             },
             "DirectionalLight_node": {
               "light": {
+                "id": "moonlight",
                 "type": "directional",
-                "color": "#F9FFCE",
-                "intensity": 0.6
+                "color": "#FFFBED",
+                "intensity": 0.5,
+                "position": "15.23 20 -9.53",
+                "castShadow": true,
+                "shadowBias": 0.0005,
+                "shadowCameraFar": 60,
+                "shadowCameraNear": 0,
+                "shadowCameraTop": 10,
+                "shadowCameraRight": 7,
+                "shadowCameraBottom": -13.62,
+                "shadowCameraLeft": -15.05,
+                "shadowMapHeight": 4096,
+                "shadowMapWidth": 4096
               },
               "hide-when-quality": "low"
             }
