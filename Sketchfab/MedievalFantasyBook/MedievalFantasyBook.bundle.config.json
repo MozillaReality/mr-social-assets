@@ -18,9 +18,7 @@
       "name": "MedievalFantasyBook",
       "src": "./Export/MedievalFantasyBook.fbx",
       "FBX2glTF": {
-        "args": [
-          "--khr-materials-unlit"
-        ]
+        "args": ["--khr-materials-unlit"]
       },
       "gltf-unlit-generator": {
         "skip": true
