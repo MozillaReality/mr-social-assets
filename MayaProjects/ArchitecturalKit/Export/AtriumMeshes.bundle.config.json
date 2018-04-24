@@ -17,7 +17,24 @@
       "src": "./AtriumMeshes.fbx",
       "components": [
         {
+          "scenes": {
+            "Root Scene": {
+              "scene-shadow": {
+                "type": "pcfsoft"
+              },
+              "shadow": {
+                "castShadow": true,
+                "receiveShadow": true
+              }
+            }
+          },
           "nodes": {
+            "RootNode": {
+              "animation-mixer": "",
+              "loop-animation": {
+                "clip": "Fan01"
+              }
+            },
             "NavMesh": {
               "visible": false,
               "nav-mesh": ""
