@@ -68,7 +68,7 @@
                 "ar": false
               }
             },
-            "Skybox_node": {
+            "Skybox": {
               "skybox": {
                 "azimuth": 0.28,
                 "inclination": 0.44
@@ -82,6 +82,28 @@
               },
               "xr": {
                 "ar": false
+              }
+            },
+            "Spawner": {
+              "gltf-model-plus": {
+                "src": "#interactable-duck"
+              },
+              "css-class": "interactable",
+              "super-spawner": {
+                "template": "#interactable-template"
+              },
+              "body": {
+                "mass": 0,
+                "type": "static",
+                "shape": "box"
+              }
+            },
+            "DirectionalLight": {
+              "hide-when-quality": "low",
+              "light": {
+                "type": "directional",
+                "color": "#F9FFCE",
+                "intensity": 0.6
               }
             }
           }
