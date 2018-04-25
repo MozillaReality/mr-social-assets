@@ -78,7 +78,22 @@
                 "mass": 0,
                 "type": "static",
                 "shape": "box"
-              }
+              },
+              "collision-filter": {
+                "collisionForces": false
+              },
+              "quack": "",
+              "sound": [
+                {
+                  "src": "#quack",
+                  "on": "quack",
+                  "poolSize": 2
+                },
+                {
+                  "src": "#specialquack",
+                  "on": "specialquack"
+                }
+              ]
             },
             "DirectionalLight_node": {
               "hide-when-quality": "low",
