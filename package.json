@@ -15,7 +15,7 @@
     "dotenv": "^5.0.1",
     "glob": "^7.1.2",
     "glob-promise": "^3.4.0",
-    "gltf-bundle": "0.8.1",
+    "gltf-bundle": "0.8.2",
     "http-server": "^0.11.1",
     "promptly": "^3.0.3"
   }
