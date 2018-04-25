@@ -2,15 +2,24 @@
   "name": "MeetingRoom",
   "version": "0.0.1",
   "meta": {
+    "title": "Meeting Room",
+    "license": "CC-BY-SA-4.0",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Environments/MeetingRoom",
     "authors": [
       {
-        "name": "Mozilla"
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
       }
     ],
     "images": [
       {
         "type": "preview-thumbnail",
-        "srcset": "./MeetingRoomScreen.jpg"
+        "srcset": "./MeetingRoomThumbnail.jpg"
       }
     ]
   },
@@ -19,8 +28,8 @@
   },
   "assets": [
     {
-      "name": "MeetingroomMesh",
-      "src": "./MeetingSpaceMeshes.fbx",
+      "name": "MeetingSpaceMeshes",
+      "src": "../../MayaProjects/MeetingRoom/Export/MeetingSpaceMeshes.fbx",
       "gltf-unlit-generator": {
         "skip": true
       },
@@ -28,6 +37,8 @@
         "args": ["--khr-materials-unlit"]
       },
       "components": [
+        "../DefaultEnvironment.json",
+        "./MeetingSpace_collision.json",
         {
           "nodes": {
             "CliffVista_mesh": {
@@ -37,10 +48,6 @@
               "layers": {
                 "reflection": true
               }
-            },
-            "FloorNav_mesh": {
-              "visible": false,
-              "nav-mesh": ""
             },
             "Water": {
               "water": {
@@ -66,35 +73,6 @@
                 "ar": false
               }
             },
-            "Spawner": {
-              "gltf-model-plus": {
-                "src": "#interactable-duck"
-              },
-              "css-class": "interactable",
-              "super-spawner": {
-                "template": "#interactable-template"
-              },
-              "body": {
-                "mass": 0,
-                "type": "static",
-                "shape": "box"
-              },
-              "collision-filter": {
-                "collisionForces": false
-              },
-              "quack": "",
-              "sound": [
-                {
-                  "src": "#quack",
-                  "on": "quack",
-                  "poolSize": 2
-                },
-                {
-                  "src": "#specialquack",
-                  "on": "specialquack"
-                }
-              ]
-            },
             "DirectionalLight_node": {
               "hide-when-quality": "low",
               "light": {
@@ -102,13 +80,9 @@
                 "color": "#F9FFCE",
                 "intensity": 0.6
               }
-            },
-            "SpawnPoint1": {
-              "spawn-point": ""
             }
           }
-        },
-        "./MeetingSpace_collision.json"
+        }
       ]
     }
   ]

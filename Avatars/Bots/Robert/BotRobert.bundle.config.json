@@ -1,0 +1,33 @@
+{
+  "name": "BotRobert",
+  "version": "0.0.2",
+  "meta": {
+    "title": "BotRobert",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Avatars/Bots/Robert",
+    "license": "CC-BY-SA-4.0",
+    "authors": [
+      {
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      }
+    ]
+  },
+  "output": {
+    "filePath": "bots"
+  },
+  "assets": [
+    {
+      "name": "BotRobert",
+      "src": "../../../MayaProjects/Avatar_Bot/Export/BotRobert_Avatar.fbx",
+      "components": ["../BotComponents.json"],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
+    }
+  ]
+}
