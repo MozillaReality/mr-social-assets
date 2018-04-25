@@ -6,6 +6,12 @@
       {
         "name": "Mozilla"
       }
+    ],
+    "images": [
+      {
+        "type": "preview-thumbnail",
+        "srcset": "./MeetingRoomScreen.jpg"
+      }
     ]
   },
   "output": {
@@ -19,9 +25,7 @@
         "skip": true
       },
       "FBX2glTF": {
-        "args": [
-          "--khr-materials-unlit"
-        ]
+        "args": ["--khr-materials-unlit"]
       },
       "components": [
         {

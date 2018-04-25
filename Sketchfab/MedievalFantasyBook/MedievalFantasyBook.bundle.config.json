@@ -8,6 +8,12 @@
         "name": "Pixel",
         "url": "https://sketchfab.com/models/06d5a80a04fc4c5ab552759e9a97d91a"
       }
+    ],
+    "images": [
+      {
+        "type": "preview-thumbnail",
+        "srcset": "./MedievalStoryBookScreen.jpg"
+      }
     ]
   },
   "output": {
