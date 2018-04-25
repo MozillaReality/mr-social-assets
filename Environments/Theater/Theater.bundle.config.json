@@ -2,9 +2,18 @@
   "name": "Theater",
   "version": "0.0.1",
   "meta": {
+    "title": "Theater",
+    "license": "CC-BY-SA-4.0",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Environments/Theater",
     "authors": [
       {
-        "name": "Mozilla"
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
       }
     ]
   },
@@ -14,14 +23,11 @@
   "assets": [
     {
       "name": "TheaterMeshes",
-      "src": "./TheaterMeshes.fbx",
+      "src": "../../MayaProjects/ArchitecturalKit/Export/TheaterMeshes.fbx",
       "components": [
+        "../DefaultEnvironment.json",
         {
           "nodes": {
-            "NavMesh": {
-              "visible": false,
-              "nav-mesh": ""
-            },
             "TheaterSpace_Mesh": {
               "light": {
                 "type": "ambient",

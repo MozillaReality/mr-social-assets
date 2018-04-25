@@ -2,9 +2,18 @@
   "name": "Courtyard",
   "version": "0.0.1",
   "meta": {
+    "title": "Courtyard",
+    "license": "CC-BY-SA-4.0",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Environments/Courtyard",
     "authors": [
       {
-        "name": "Mozilla"
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
       }
     ]
   },
@@ -14,14 +23,11 @@
   "assets": [
     {
       "name": "CourtyardMeshes",
-      "src": "./CourtyardMeshes.fbx",
+      "src": "../../MayaProjects/ArchitecturalKit/Export/CourtyardMeshes.fbx",
       "components": [
+        "../DefaultEnvironment.json",
         {
           "nodes": {
-            "NavMesh": {
-              "visible": false,
-              "nav-mesh": ""
-            },
             "Skybox_node": {
               "skybox": {
                 "azimuth": 0.28,

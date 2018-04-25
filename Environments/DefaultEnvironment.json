@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "NavMesh": {
+      "visible": false,
+      "nav-mesh": ""
+    },
+    "SpawnPoint1": {
+      "spawn-point": ""
+    },
+    "SpawnPoint2": {
+      "spawn-point": ""
+    },
+    "SpawnPoint3": {
+      "spawn-point": ""
+    },
+    "SpawnPoint4": {
+      "spawn-point": ""
+    },
+    "SpawnPoint5": {
+      "spawn-point": ""
+    },
+    "SpawnPoint6": {
+      "spawn-point": ""
+    },
+    "SpawnPoint7": {
+      "spawn-point": ""
+    },
+    "SpawnPoint8": {
+      "spawn-point": ""
+    },
+    "Spawner": {
+      "gltf-model-plus": {
+        "src": "#interactable-duck"
+      },
+      "css-class": "interactable",
+      "super-spawner": {
+        "template": "#interactable-template"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "quack": "",
+      "sound": [
+        {
+          "src": "#quack",
+          "on": "quack",
+          "poolSize": 2
+        },
+        {
+          "src": "#specialquack",
+          "on": "specialquack"
+        }
+      ]
+    }
+  }
+}

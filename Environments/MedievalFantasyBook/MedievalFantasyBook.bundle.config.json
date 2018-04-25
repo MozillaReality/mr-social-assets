@@ -3,7 +3,17 @@
   "version": "0.0.1",
   "meta": {
     "title": "Medieval Fantasy Book",
+    "license": "CC-BY-4.0",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Environments/MedievalFantasyBook",
     "authors": [
+      {
+        "name": "Jim Conrad",
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      },
       {
         "name": "Pixel",
         "url": "https://sketchfab.com/models/06d5a80a04fc4c5ab552759e9a97d91a"
@@ -12,7 +22,7 @@
     "images": [
       {
         "type": "preview-thumbnail",
-        "srcset": "./MedievalStoryBookScreen.jpg"
+        "srcset": "./MedievalFantasyBookThumbnail.jpg"
       }
     ]
   },
@@ -22,7 +32,8 @@
   "assets": [
     {
       "name": "MedievalFantasyBook",
-      "src": "./Export/MedievalFantasyBook.fbx",
+      "src":
+        "../../Sketchfab/MedievalFantasyBook/Export/MedievalFantasyBook.fbx",
       "FBX2glTF": {
         "args": ["--khr-materials-unlit"]
       },
@@ -30,6 +41,7 @@
         "skip": true
       },
       "components": [
+        "../DefaultEnvironment.json",
         {
           "scenes": {
             "Root Scene": {
@@ -43,10 +55,6 @@
               "loop-animation": {
                 "clip": "Take 001"
               }
-            },
-            "NavMesh": {
-              "visible": false,
-              "nav-mesh": ""
             }
           }
         }

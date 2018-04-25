@@ -1,0 +1,89 @@
+{
+  "name": "MeetingRoom",
+  "version": "0.0.1",
+  "meta": {
+    "title": "Meeting Room",
+    "license": "CC-BY-SA-4.0",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/Environments/MeetingRoom",
+    "authors": [
+      {
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      }
+    ],
+    "images": [
+      {
+        "type": "preview-thumbnail",
+        "srcset": "./MeetingRoomThumbnail.jpg"
+      }
+    ]
+  },
+  "output": {
+    "filePath": "rooms/meetingroom"
+  },
+  "assets": [
+    {
+      "name": "MeetingSpaceMeshes",
+      "src": "../../MayaProjects/MeetingRoom/Export/MeetingSpaceMeshes.fbx",
+      "gltf-unlit-generator": {
+        "skip": true
+      },
+      "FBX2glTF": {
+        "args": ["--khr-materials-unlit"]
+      },
+      "components": [
+        "../DefaultEnvironment.json",
+        "./MeetingSpace_collision.json",
+        {
+          "nodes": {
+            "CliffVista_mesh": {
+              "xr": {
+                "ar": false
+              },
+              "layers": {
+                "reflection": true
+              }
+            },
+            "Water": {
+              "water": {
+                "forceMobile": true
+              },
+              "xr": {
+                "ar": false
+              }
+            },
+            "Skybox_node": {
+              "skybox": {
+                "azimuth": 0.28,
+                "inclination": 0.44
+              },
+              "light": {
+                "type": "ambient",
+                "color": "#FFF"
+              },
+              "layers": {
+                "reflection": true
+              },
+              "xr": {
+                "ar": false
+              }
+            },
+            "DirectionalLight_node": {
+              "hide-when-quality": "low",
+              "light": {
+                "type": "directional",
+                "color": "#F9FFCE",
+                "intensity": 0.6
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
