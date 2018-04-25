@@ -6,12 +6,6 @@
       {
         "name": "Mozilla"
       }
-    ],
-    "images": [
-      {
-        "type": "preview-thumbnail",
-        "srcset": "./AtriumThumbnail.jpg"
-      }
     ]
   },
   "output": {
