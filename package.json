@@ -4,10 +4,8 @@
   "repository": "https://github.com/MozillaReality/mr-social-assets.git",
   "license": "MPL-2.0",
   "scripts": {
-    "setup":
-      "mkdir certs; openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout ./certs/key.pem -out ./certs/cert.pem",
-    "start":
-      "http-server -p 8081 -c-1 --cors --ssl --cert ./certs/cert.pem --key ./certs/key.pem ./dist",
+    "setup": "mkdir certs; openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout ./certs/key.pem -out ./certs/cert.pem",
+    "start": "http-server -p 8081 -c-1 --cors --ssl --cert ./certs/cert.pem --key ./certs/key.pem ./dist",
     "build": "gltf-bundle -o ./dist",
     "deploy": "node ./deploy.js ./dist"
   },
@@ -17,7 +15,7 @@
     "dotenv": "^5.0.1",
     "glob": "^7.1.2",
     "glob-promise": "^3.4.0",
-    "gltf-bundle": "0.8.2",
+    "gltf-bundle": "0.8.3",
     "http-server": "^0.11.1",
     "promptly": "^3.0.3"
   }

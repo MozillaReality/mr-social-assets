@@ -369,9 +369,9 @@ glob@^7.0.5, glob@^7.1.2:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-gltf-bundle@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/gltf-bundle/-/gltf-bundle-0.8.2.tgz#08fe67305470ec4252612cfaea53c1a9d6543578"
+gltf-bundle@0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/gltf-bundle/-/gltf-bundle-0.8.3.tgz#4d089b7f1cf5bbf5a80d21e50603400fd84222c9"
   dependencies:
     "@robertlong/fbx2gltf" "^0.10.3"
     ajv "^6.4.0"
@@ -379,15 +379,15 @@ gltf-bundle@0.8.2:
     fs-extra "^5.0.0"
     glob "^7.1.2"
     glob-promise "^3.4.0"
-    gltf-component-data "^0.1.0"
+    gltf-component-data "0.1.1"
     gltf-content-hash "0.5.2"
     gltf-import-export "^1.0.7"
     gltf-navmesh-generator "0.3.0"
     gltf-unlit-generator "^0.3.0"
 
-gltf-component-data@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gltf-component-data/-/gltf-component-data-0.1.0.tgz#691148277f899c953b1b9d9e256761bb6875fd25"
+gltf-component-data@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gltf-component-data/-/gltf-component-data-0.1.1.tgz#f3d189833ba25cbb8b9d2862860f90851adf2de0"
   dependencies:
     commander "^2.15.0"
     fs-extra "^5.0.0"
