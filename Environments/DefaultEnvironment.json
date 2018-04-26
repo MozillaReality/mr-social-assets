@@ -56,6 +56,64 @@
           "on": "specialquack"
         }
       ]
+    },
+    "Spawner1": {
+      "gltf-model-plus": {
+        "src": "#interactable-duck"
+      },
+      "css-class": "interactable",
+      "super-spawner": {
+        "template": "#interactable-template"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "quack": "",
+      "sound": [
+        {
+          "src": "#quack",
+          "on": "quack",
+          "poolSize": 2
+        },
+        {
+          "src": "#specialquack",
+          "on": "specialquack"
+        }
+      ]
+    },
+    "Spawner2": {
+      "gltf-model-plus": {
+        "src": "#interactable-duck"
+      },
+      "css-class": "interactable",
+      "super-spawner": {
+        "template": "#interactable-template"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "quack": "",
+      "sound": [
+        {
+          "src": "#quack",
+          "on": "quack",
+          "poolSize": 2
+        },
+        {
+          "src": "#specialquack",
+          "on": "specialquack"
+        }
+      ]
     }
   }
 }
