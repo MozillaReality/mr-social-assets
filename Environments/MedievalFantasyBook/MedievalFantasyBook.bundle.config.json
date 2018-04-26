@@ -8,15 +8,16 @@
       "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/MedievalFantasyBook",
     "authors": [
       {
+        "name": "Pixel",
+        "attribution": true,
+        "url": "https://sketchfab.com/models/06d5a80a04fc4c5ab552759e9a97d91a"
+      },
+      {
         "name": "Jim Conrad",
         "organization": {
           "name": "Mozilla",
           "url": "https://mixedreality.mozilla.org/"
         }
-      },
-      {
-        "name": "Pixel",
-        "url": "https://sketchfab.com/models/06d5a80a04fc4c5ab552759e9a97d91a"
       }
     ],
     "images": [
@@ -32,11 +33,10 @@
   "assets": [
     {
       "name": "MedievalFantasyBook",
-      "src": "../../Sketchfab/MedievalFantasyBook/Export/MedievalFantasyBook.fbx",
+      "src":
+        "../../Sketchfab/MedievalFantasyBook/Export/MedievalFantasyBook.fbx",
       "FBX2glTF": {
-        "args": [
-          "--khr-materials-unlit"
-        ]
+        "args": ["--khr-materials-unlit"]
       },
       "gltf-unlit-generator": {
         "skip": true
