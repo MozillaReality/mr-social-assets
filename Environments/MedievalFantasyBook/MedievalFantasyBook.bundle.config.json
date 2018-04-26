@@ -43,6 +43,7 @@
       },
       "components": [
         "../DefaultEnvironment.json",
+        "./collision.json",
         {
           "scenes": {
             "Root Scene": {
