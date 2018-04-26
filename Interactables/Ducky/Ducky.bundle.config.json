@@ -4,8 +4,7 @@
   "meta": {
     "title": "Ducky",
     "license": "CC-BY-SA-4.0",
-    "url":
-      "https://github.com/MozillaReality/mr-social-assets/tree/master/Interactables/Ducky",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Interactables/Ducky",
     "authors": [
       {
         "name": "Jim Conrad",
@@ -22,7 +21,10 @@
   "assets": [
     {
       "name": "Ducky",
-      "src": "../../MayaProjects/Interactables/Export/DuckyMesh.fbx"
+      "src": "../../MayaProjects/Interactables/Export/DuckyMesh.fbx",
+      "components": [
+        "./collision.json"
+      ]
     }
   ]
 }
