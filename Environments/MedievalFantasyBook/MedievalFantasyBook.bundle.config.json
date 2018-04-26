@@ -4,7 +4,12 @@
   "meta": {
     "title": "Medieval Fantasy Book",
     "license": "CC-BY-4.0",
+<<<<<<< HEAD
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/MedievalFantasyBook",
+=======
     "url": "https://github.com/MozillaReality/mr-social-assets/Environments/MedievalFantasyBook",
+>>>>>>> eac28ed5fad5c1a737aca616c1fe7c2309da7392
     "authors": [
       {
         "name": "Jim Conrad",
