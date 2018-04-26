@@ -36,6 +36,7 @@
       "src": "../../MayaProjects/ArchitecturalKit/Export/AtriumMeshes.fbx",
       "components": [
         "../DefaultEnvironment.json",
+        "./collision.json",
         {
           "scenes": {
             "Root Scene": {
