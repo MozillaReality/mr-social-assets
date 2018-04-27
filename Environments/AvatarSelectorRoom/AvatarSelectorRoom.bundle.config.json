@@ -1,0 +1,102 @@
+{
+  "name": "AvatarSelectorRoom",
+  "version": "0.0.1",
+  "meta": {
+    "title": "AvatarSelectorRoom",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/AvatarSelectorRoom",
+    "authors": [
+      {
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      }
+    ]
+  },
+  "output": {
+    "filePath": "rooms/AvatarSelectorRoom"
+  },
+  "assets": [
+    {
+      "name": "AvatarSelectorRoom",
+      "src": "../../MayaProjects/ArchitecturalKit/Export/AvatarSelectorRoom.fbx",
+      "components": [
+        "../DefaultEnvironment.json",
+        {
+          "scenes": {
+            "Root Scene": {
+              "scene-shadow": {
+                "type": "pcfsoft"
+              },
+              "shadow": {
+                "castShadow": true,
+                "receiveShadow": true
+              }
+            }
+          },
+          "nodes": {
+            "Skybox_node": {
+              "skybox": {
+                "turbidity": 20,
+                "rayleigh": 0.03,
+                "luminance": 0.175,
+                "azimuth": 0.37,
+                "inclination": 0.14,
+                "mieCoefficient": 0.004,
+                "mieDirectionalG": 0.098
+              },
+              "light": {
+                "type": "hemisphere",
+                "color": "#d2efff",
+                "groundColor": "#847d70",
+                "intensity": 1.5
+              }
+            },
+            "DirectionalLight_node": {
+              "light": {
+                "type": "directional",
+                "color": "#fffbe1",
+                "intensity": 1.5,
+                "position": "15.23 20 -9.53",
+                "castShadow": true,
+                "shadowBias": 0.0001,
+                "shadowCameraFar": 60,
+                "shadowCameraNear": 0,
+                "shadowCameraTop": 10,
+                "shadowCameraRight": 7,
+                "shadowCameraBottom": -13.62,
+                "shadowCameraLeft": -15.05,
+                "shadowMapHeight": 4096,
+                "shadowMapWidth": 4096
+              },
+              "hide-when-quality": "low"
+            },
+            "AvatarPicker1": {
+              "css-class": ".interactable",
+              "avatar-switcher": "",
+              "gltf-model-plus": {
+                "src": "#botwoody"
+              }
+            },
+            "AvatarPicker2": {
+              "css-class": ".interactable",
+              "avatar-switcher": "",
+              "gltf-model-plus": {
+                "src": "#botkev"
+              }
+            },
+            "Mirror": {
+              "mirror": ""
+            }
+          }
+        }
+      ],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
+    }
+  ]
+}
