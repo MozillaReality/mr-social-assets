@@ -44,6 +44,7 @@
       "collision-filter": {
         "collisionForces": false
       },
+      "hoverable": "",
       "quack": "",
       "sound": [
         {
@@ -73,6 +74,7 @@
       "collision-filter": {
         "collisionForces": false
       },
+      "hoverable": "",
       "quack": "",
       "sound": [
         {
@@ -102,6 +104,7 @@
       "collision-filter": {
         "collisionForces": false
       },
+      "hoverable": "",
       "quack": "",
       "sound": [
         {
