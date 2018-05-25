@@ -1,0 +1,95 @@
+{
+  "name": "RooftopBuilding1",
+  "version": "0.0.1",
+  "meta": {
+    "title": "Rooftop Bunker",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/RooftopBuilding1",
+    "authors": [
+      {
+        "name": "Jim Conrad",
+        "attribution": true,
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      }
+    ],
+    "images": [
+      {
+        "type": "preview-thumbnail",
+        "srcset": "./RooftopBunkerThumbnail.jpg"
+      }
+    ]
+  },
+  "output": {
+    "filePath": "rooms/rooftopbuilding1"
+  },
+  "assets": [
+    {
+      "name": "RooftopBuilding1",
+      "src": "../../MayaProjects/ArchitecturalKit/Export/RooftopBuilding1.fbx",
+      "components": [
+        "../DefaultEnvironment.json",
+        "./collision.json",
+        {
+          "scenes": {
+            "Root Scene": {
+              "scene-shadow": {
+                "type": "pcfsoft"
+              },
+              "shadow": {
+                "castShadow": true,
+                "receiveShadow": true
+              },
+              "loop-animation": {
+                "clip": "Fan01"
+              }
+            }
+          },
+          "nodes": {
+            "Skybox_node": {
+              "skybox": {
+                "turbidity": 20,
+                "rayleigh": 0.03,
+                "luminance": 0.175,
+                "azimuth": 0.37,
+                "inclination": 0.14,
+                "mieCoefficient": 0.004,
+                "mieDirectionalG": 0.098
+              },
+              "light": {
+                "type": "hemisphere",
+                "color": "#d2efff",
+                "groundColor": "#89979c",
+                "intensity": 1.5
+              }
+            },
+            "DirectionalLight_node": {
+              "light": {
+                "type": "directional",
+                "color": "#fffbe1",
+                "intensity": 1.5,
+                "position": "15.23 20 -9.53",
+                "castShadow": true,
+                "shadowBias": 0.0001,
+                "shadowCameraFar": 60,
+                "shadowCameraNear": 0,
+                "shadowCameraTop": 10,
+                "shadowCameraRight": 7,
+                "shadowCameraBottom": -13.62,
+                "shadowCameraLeft": -15.05,
+                "shadowMapHeight": 4096,
+                "shadowMapWidth": 4096
+              },
+              "hide-when-quality": "low"
+            }
+          }
+        }
+      ],
+      "gltf-unlit-generator": {
+        "lighten": 0.2
+      }
+    }
+  ]
+}
