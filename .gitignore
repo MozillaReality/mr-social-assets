@@ -13,10 +13,3 @@ package-lock.json
 
 # MacOS
 .DS_Store
-
-# gltf-bundle
-dist/
-
-# Environment files
-.env
-certs/
