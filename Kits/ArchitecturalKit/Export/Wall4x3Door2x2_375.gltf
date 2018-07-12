@@ -182,16 +182,16 @@
     ],
     "images": [
         {
-            "uri": "ArchModuleTex_Albedo.jpg"
+            "uri": "ArchMods_Roughness.jpg"
         },
         {
-            "uri": "ArchModuleTex_Roughness-ArchModuleTex_Metalness.jpg"
+            "uri": "ArchMods_Roughness-ArchMods_Metallic.jpg"
         },
         {
-            "uri": "ArchModuleTex_NormalMap.jpg"
+            "uri": "ArchMods_Normal.png"
         },
         {
-            "uri": "ArchModuleTex_Occlusion.jpg"
+            "uri": "ArchMods_Ambient_Occlusion.jpg"
         },
         {
             "uri": "ArchModuleTex_Emission.png"
