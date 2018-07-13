@@ -1,0 +1,26 @@
+{
+  "nodes": {
+    "DrawingPen": {
+      "shape": [
+        {
+          "shape": "cylinder",
+          "radiusTop": 0.06,
+          "radiusBottom": 0.04,
+          "height": 0.38,
+          "numSegments": 8,
+          "offset": {
+            "x": 0,
+            "y": 0.02,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        }
+      ]
+    }
+  }
+}
