@@ -4,8 +4,8 @@
       "shape": [
         {
           "shape": "cylinder",
-          "radiusTop": 0.06,
-          "radiusBottom": 0.04,
+          "radiusTop": 0.04,
+          "radiusBottom": 0.06,
           "height": 0.38,
           "numSegments": 8,
           "offset": {
