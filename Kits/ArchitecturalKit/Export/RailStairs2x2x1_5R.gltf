@@ -1,6 +1,6 @@
 {
     "asset": {
-        "generator": "Maya2glTF V0.9.7-BETA 66f7270",
+        "generator": "Maya2glTF V0.9.7-BETA ab18f62",
         "version": "2.0"
     },
     "scenes": [
@@ -78,14 +78,14 @@
             "componentType": 5126,
             "count": 132,
             "max": [
-                96.85009765625,
-                251.5511016845703,
-                4.7012939453125
+                0.9685009717941284,
+                2.5155110359191896,
+                0.04701294004917145
             ],
             "min": [
-                90.6494140625,
+                0.906494140625,
                 0.0,
-                -189.05120849609376
+                -1.890511989593506
             ],
             "type": "VEC3"
         },
@@ -182,7 +182,7 @@
     ],
     "images": [
         {
-            "uri": "ArchMods_Roughness.jpg"
+            "uri": "ArchMods_Base_Color.jpg"
         },
         {
             "uri": "ArchMods_Roughness-ArchMods_Metallic.jpg"

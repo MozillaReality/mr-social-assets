@@ -78,7 +78,8 @@ class Maya2glTFExportWindow:
             
     def export(self):
         outputFolder = cmds.textFieldButtonGrp(self.outputFolderGroup, query=True, text=True)
-        params = '-outputFolder "{0}"\n'.format(outputFolder)
+        scaleFactor = cmds.floatFieldGrp(self.scaleFactorGroup, query=True, value1=True)
+        params = '-outputFolder "{0}" -scaleFactor {1}\n'.format(outputFolder, scaleFactor)
 
         exportAnimation = cmds.checkBoxGrp(self.exportAnimationGroup, q=True, value1=True)
 
