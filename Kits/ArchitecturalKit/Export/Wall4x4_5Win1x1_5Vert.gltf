@@ -136,25 +136,16 @@
                 "baseColorTexture": {
                     "index": 0
                 },
-                "metallicFactor": 1.0,
-                "roughnessFactor": 1.0,
-                "metallicRoughnessTexture": {
-                    "index": 1
-                }
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
             },
             "emissiveFactor": [
                 1.0,
                 1.0,
                 1.0
             ],
-            "emissiveTexture": {
-                "index": 4
-            },
-            "normalTexture": {
-                "index": 2
-            },
             "occlusionTexture": {
-                "index": 3
+                "index": 1
             }
         }
     ],
@@ -166,18 +157,6 @@
         {
             "sampler": 0,
             "source": 1
-        },
-        {
-            "sampler": 0,
-            "source": 2
-        },
-        {
-            "sampler": 0,
-            "source": 3
-        },
-        {
-            "sampler": 0,
-            "source": 4
         }
     ],
     "images": [
@@ -185,16 +164,7 @@
             "uri": "ArchMods_Base_Color.jpg"
         },
         {
-            "uri": "ArchMods_Roughness-ArchMods_Metallic.jpg"
-        },
-        {
-            "uri": "ArchMods_Normal.png"
-        },
-        {
-            "uri": "ArchMods_Ambient_Occlusion.jpg"
-        },
-        {
-            "uri": "ArchModuleTex_Emission.png"
+            "uri": "ArchMods_Occlusion.jpg"
         }
     ],
     "samplers": [
