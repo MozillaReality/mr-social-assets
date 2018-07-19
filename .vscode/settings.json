@@ -1,9 +1,0 @@
-{
-  "editor.formatOnSave": true,
-  "json.schemas": [
-    {
-      "fileMatch": ["*.bundle.config.json"],
-      "url": "./node_modules/gltf-bundle/schema/gltf-bundle-config.json"
-    }
-  ]
-}
