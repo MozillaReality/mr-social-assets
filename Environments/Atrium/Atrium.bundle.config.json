@@ -4,7 +4,8 @@
   "meta": {
     "title": "Atrium",
     "license": "CC-BY-SA-4.0",
-    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/Atrium",
+    "url":
+      "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/Atrium",
     "authors": [
       {
         "name": "Jim Conrad",
@@ -102,6 +103,9 @@
               },
               "hide-when-quality": "low"
             },
+            "spotTarget1_node": {
+              "hide-when-quality": "low"
+            },
             "spotLight2_node": {
               "light": {
                 "type": "spot",
@@ -116,6 +120,9 @@
               },
               "hide-when-quality": "low"
             },
+            "spotTarget2_node": {
+              "hide-when-quality": "low"
+            },
             "spotLight3_node": {
               "light": {
                 "type": "spot",
@@ -128,6 +135,9 @@
                 "target": ".spotTarget3_node",
                 "castShadow": false
               },
+              "hide-when-quality": "low"
+            },
+            "spotTarget3_node": {
               "hide-when-quality": "low"
             }
           }
