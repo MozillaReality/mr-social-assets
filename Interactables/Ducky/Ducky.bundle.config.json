@@ -23,7 +23,14 @@
       "name": "Ducky",
       "src": "../../MayaProjects/Interactables/Export/DuckyMesh.fbx",
       "components": [
-        "./collision.json"
+        "./collision.json",
+        {
+          "nodes": {
+            "Ducky": {
+              "duck": {}
+            }
+          }
+        }
       ]
     }
   ]

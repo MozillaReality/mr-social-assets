@@ -30,11 +30,12 @@
     },
     "Spawner": {
       "gltf-model-plus": {
-        "src": "#interactable-duck"
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "css-class": "interactable",
       "super-spawner": {
-        "template": "#interactable-template"
+        "template": "#interactable-media",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "body": {
         "mass": 0,
@@ -58,13 +59,14 @@
         }
       ]
     },
-    "Spawner1": {
+    "Spawner_Duck2": {
       "gltf-model-plus": {
-        "src": "#interactable-duck"
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "css-class": "interactable",
       "super-spawner": {
-        "template": "#interactable-template"
+        "template": "#interactable-media",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "body": {
         "mass": 0,
@@ -88,13 +90,14 @@
         }
       ]
     },
-    "Spawner2": {
+    "Spawner_Duck3": {
       "gltf-model-plus": {
-        "src": "#interactable-duck"
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "css-class": "interactable",
       "super-spawner": {
-        "template": "#interactable-template"
+        "template": "#interactable-media",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/Ducky/DuckyMesh-438ff8e022.gltf"
       },
       "body": {
         "mass": 0,
@@ -117,6 +120,78 @@
           "on": "specialquack"
         }
       ]
+    },
+    "Spawner_Pen1": {
+      "gltf-model-plus": {
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "css-class":["interactable", "toggle"],
+      "super-spawner": {
+        "template": "#pen-interactable",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "scale": {
+        "x": 0.5, 
+        "y": 0.5, 
+        "z": 0.5
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "hoverable": ""
+    },
+    "Spawner_Pen2": {
+      "gltf-model-plus": {
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "css-class":["interactable", "toggle"],
+      "super-spawner": {
+        "template": "#pen-interactable",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "scale": {
+        "x": 0.5, 
+        "y": 0.5, 
+        "z": 0.5
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "hoverable": ""
+    },
+    "Spawner_Pen3": {
+      "gltf-model-plus": {
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "css-class":["interactable", "toggle"],
+      "super-spawner": {
+        "template": "#pen-interactable",
+        "src": "https://asset-bundles-prod.reticulum.io/interactables/DrawingPen/DrawingPen-484ae5682f.gltf"
+      },
+      "body": {
+        "mass": 0,
+        "type": "static",
+        "shape": "box"
+      },
+      "scale": {
+        "x": 0.5, 
+        "y": 0.5, 
+        "z": 0.5
+      },
+      "collision-filter": {
+        "collisionForces": false
+      },
+      "hoverable": ""
     }
   }
 }
