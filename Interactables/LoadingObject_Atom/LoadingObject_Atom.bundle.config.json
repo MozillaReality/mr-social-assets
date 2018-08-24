@@ -1,0 +1,30 @@
+{
+  "name": "LoadingObject_Atom",
+  "version": "0.0.1",
+  "meta": {
+    "title": "LoadingObject_Atom",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Interactables/LoadingObject_Atom",
+    "authors": [
+      {
+        "name": "Jim Conrad",
+        "organization": {
+          "name": "Mozilla",
+          "url": "https://mixedreality.mozilla.org/"
+        }
+      }
+    ]
+  },
+  "output": {
+    "filePath": "interactables/LoadingObject_Atom"
+  },
+  "assets": [
+    {
+      "name": "LoadingObject_Atom",
+      "src": "../../MayaProjects/Interactables/Export/LoadingObject_Atom.fbx",
+      "components": [
+        "./collision.json"
+      ]
+    }
+  ]
+}
