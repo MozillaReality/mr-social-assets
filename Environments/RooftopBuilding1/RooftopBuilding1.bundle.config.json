@@ -41,9 +41,6 @@
               "shadow": {
                 "castShadow": true,
                 "receiveShadow": true
-              },
-              "loop-animation": {
-                "clip": "Fan01"
               }
             }
           },
@@ -70,7 +67,6 @@
                 "type": "directional",
                 "color": "#fdf5c2",
                 "intensity": 12,
-                "position": "15.23 20 -9.53",
                 "castShadow": true,
                 "shadowBias": 0.0001,
                 "shadowCameraFar": 60,

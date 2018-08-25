@@ -31,6 +31,7 @@
       "src": "../../MayaProjects/ArchitecturalKit/Export/WideOpenSpace.fbx",
       "components": [
         "../DefaultEnvironment.json",
+        "./collision.json",
         {
           "scenes": {
             "Root Scene": {
@@ -66,7 +67,6 @@
                 "type": "directional",
                 "color": "#fdf5c2",
                 "intensity": 12,
-                "position": "15.23 20 -9.53",
                 "castShadow": true,
                 "shadowBias": 0.0001,
                 "shadowCameraFar": 90,

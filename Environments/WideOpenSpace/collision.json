@@ -1,0 +1,27 @@
+{
+  "scenes": {
+    "Root Scene": {
+      "shape": [
+        {
+          "shape": "box",
+          "halfExtents": {
+            "x": 32,
+            "y": 1,
+            "z": 32
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        }
+      ]
+    }
+  }
+}

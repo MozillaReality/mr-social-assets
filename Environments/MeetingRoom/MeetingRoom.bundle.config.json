@@ -97,7 +97,6 @@
               "light": {
                 "type": "directional",
                 "color": "#F9FFCE",
-                "position": "-5.45 7.0 -19.32",
                 "intensity": 6,
                 "castShadow": true,
                 "shadowBias": 0.0001,
