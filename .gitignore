@@ -6,6 +6,9 @@
 *.exr
 *.tx
 
+#Substance temp save files
+*.tmpsave
+
 # NodeJS
 node_modules/
 package-lock.json
