@@ -1,10 +1,10 @@
 {
-  "name": "RooftopBuilding1",
+  "name": "WideOpenSpace",
   "version": "0.0.1",
   "meta": {
-    "title": "Rooftop Bunker",
+    "title": "Wide Open Space",
     "license": "CC-BY-SA-4.0",
-    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/RooftopBuilding1",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/WideOpenSpace",
     "authors": [
       {
         "name": "Jim Conrad",
@@ -18,20 +18,19 @@
     "images": [
       {
         "type": "preview-thumbnail",
-        "srcset": "./RooftopBunkerThumbnail.jpg"
+        "srcset": "./WideOpenSpaceThumbnail.jpg"
       }
     ]
   },
   "output": {
-    "filePath": "rooms/rooftopbuilding1"
+    "filePath": "rooms/wideopenspace"
   },
   "assets": [
     {
-      "name": "RooftopBuilding1",
-      "src": "../../MayaProjects/ArchitecturalKit/Export/RooftopBuilding1.fbx",
+      "name": "MeetingSpaceMeshes",
+      "src": "../../MayaProjects/ArchitecturalKit/Export/WideOpenSpace.fbx",
       "components": [
         "../DefaultEnvironment.json",
-        "./collision.json",
         {
           "scenes": {
             "Root Scene": {
@@ -41,9 +40,6 @@
               "shadow": {
                 "castShadow": true,
                 "receiveShadow": true
-              },
-              "loop-animation": {
-                "clip": "Fan01"
               }
             }
           },
@@ -73,12 +69,12 @@
                 "position": "15.23 20 -9.53",
                 "castShadow": true,
                 "shadowBias": 0.0001,
-                "shadowCameraFar": 60,
+                "shadowCameraFar": 90,
                 "shadowCameraNear": 0,
-                "shadowCameraTop": 10,
-                "shadowCameraRight": 7,
-                "shadowCameraBottom": -13.62,
-                "shadowCameraLeft": -15.05,
+                "shadowCameraTop": 40,
+                "shadowCameraRight": 45,
+                "shadowCameraBottom": -35,
+                "shadowCameraLeft": -45,
                 "shadowMapHeight": 4096,
                 "shadowMapWidth": 4096
               },

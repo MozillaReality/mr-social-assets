@@ -4,8 +4,7 @@
   "meta": {
     "title": "Meeting Room",
     "license": "CC-BY-SA-4.0",
-    "url":
-      "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/MeetingRoom",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/MeetingRoom",
     "authors": [
       {
         "name": "Jim Conrad",
@@ -34,12 +33,25 @@
         "skip": true
       },
       "FBX2glTF": {
-        "args": ["--khr-materials-unlit"]
+        "args": [
+          "--khr-materials-unlit"
+        ]
       },
       "components": [
         "../DefaultEnvironment.json",
         "./MeetingSpace_collision.json",
         {
+          "scenes": {
+            "Root Scene": {
+              "scene-shadow": {
+                "type": "pcfsoft"
+              },
+              "shadow": {
+                "castShadow": true,
+                "receiveShadow": true
+              }
+            }
+          },
           "nodes": {
             "CliffVista_mesh": {
               "xr": {
@@ -59,12 +71,19 @@
             },
             "Skybox_node": {
               "skybox": {
-                "azimuth": 0.28,
-                "inclination": 0.44
+                "turbidity": 20,
+                "rayleigh": 0.03,
+                "luminance": 0.175,
+                "azimuth": 0.21,
+                "inclination": 0.41,
+                "mieCoefficient": 0.004,
+                "mieDirectionalG": 0.098
               },
               "light": {
-                "type": "ambient",
-                "color": "#FFF"
+                "type": "hemisphere",
+                "color": "#b1e3ff",
+                "groundColor": "#b1e3ff",
+                "intensity": 1.5
               },
               "layers": {
                 "reflection": true
@@ -78,8 +97,36 @@
               "light": {
                 "type": "directional",
                 "color": "#F9FFCE",
-                "intensity": 0.6
+                "position": "-5.45 7.0 -19.32",
+                "intensity": 6,
+                "castShadow": true,
+                "shadowBias": 0.0001,
+                "shadowCameraFar": 60,
+                "shadowCameraNear": 10,
+                "shadowCameraTop": 12,
+                "shadowCameraRight": 12,
+                "shadowCameraBottom": -12,
+                "shadowCameraLeft": -12,
+                "shadowMapHeight": 4096,
+                "shadowMapWidth": 4096
               }
+            },
+            "spotLight1_node": {
+              "light": {
+                "type": "spot",
+                "color": "#FFFFFF",
+                "intensity": 2,
+                "angle": 70,
+                "decay": 0.01,
+                "distance": 10,
+                "penumbra": 1,
+                "target": ".spotTarget1_node",
+                "castShadow": false
+              },
+              "hide-when-quality": "low"
+            },
+            "spotTarget1_node": {
+              "hide-when-quality": "low"
             }
           }
         }

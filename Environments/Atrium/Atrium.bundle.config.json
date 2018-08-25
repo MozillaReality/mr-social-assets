@@ -4,8 +4,7 @@
   "meta": {
     "title": "Atrium",
     "license": "CC-BY-SA-4.0",
-    "url":
-      "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/Atrium",
+    "url": "https://github.com/MozillaReality/mr-social-assets/tree/master/Environments/Atrium",
     "authors": [
       {
         "name": "Jim Conrad",
@@ -65,16 +64,16 @@
               },
               "light": {
                 "type": "hemisphere",
-                "color": "#d2efff",
-                "groundColor": "#d2efff",
+                "color": "#b1e3ff",
+                "groundColor": "#b1e3ff",
                 "intensity": 1.5
               }
             },
             "DirectionalLight_node": {
               "light": {
                 "type": "directional",
-                "color": "#fffbe1",
-                "intensity": 3,
+                "color": "#fdf5c2",
+                "intensity": 12,
                 "position": "15.23 20 -9.53",
                 "castShadow": true,
                 "shadowBias": 0.0001,
