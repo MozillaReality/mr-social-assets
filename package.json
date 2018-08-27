@@ -4,7 +4,8 @@
   "repository": "https://github.com/MozillaReality/mr-social-assets.git",
   "license": "MPL-2.0",
   "scripts": {
-    "start": "http-server -p 8081 -c-1 --cors ./",
+    "setup": "mkdir certs; openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout ./certs/key.pem -out ./certs/cert.pem",
+    "start": "http-server -p 8081 -c-1 --cors --ssl --cert ./certs/cert.pem --key ./certs/key.pem ./dist",
     "build": "gltf-bundle -o ./dist",
     "deploy": "node ./deploy.js ./dist"
   },
