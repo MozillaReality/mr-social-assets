@@ -40,7 +40,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "collision-filter": {
         "collisionForces": false
@@ -71,7 +71,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "collision-filter": {
         "collisionForces": false
@@ -102,7 +102,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "collision-filter": {
         "collisionForces": false
@@ -133,7 +133,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "scale": {
         "x": 0.5, 
@@ -157,7 +157,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "scale": {
         "x": 0.5, 
@@ -181,7 +181,7 @@
       "body": {
         "mass": 0,
         "type": "static",
-        "shape": "box"
+        "shape": "none"
       },
       "scale": {
         "x": 0.5, 
